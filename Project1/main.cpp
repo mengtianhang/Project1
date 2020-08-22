@@ -67,5 +67,5 @@ void main()
 		cout << maxPosition +1<< " ";
 		sum[maxPosition] = -1;
 	}
-	system("pause12");
+	system("pause123");
 }
