@@ -5,9 +5,9 @@
 using namespace std;
 
 int main() {
-	int a, b, c, d;
+	long a, b, c, d;
 	cin >> a >> b >> c >> d;
-	vector<int>allNumbers;
+	vector<long>allNumbers;
 	if (a == b == c == d == 1) {
 		cout << -1 << endl;
 	}
@@ -16,12 +16,12 @@ int main() {
 	allNumbers.push_back(c);
 	allNumbers.push_back(d);
 
-	vector<int>dp(4, 0);
+	vector<long>dp(4, 0);
 	bool flag = true;
 	while (flag) {
 		for (int i = 0; i < 4; i++) {
 			sort(allNumbers.begin(), allNumbers.end());
-			while (allNumbers[3] > allNumbers[2] && allNumbers[0] <= allNumbers[1]) {
+			while (allNumbers[3] >= allNumbers[2] && allNumbers[0] <= allNumbers[1]) {
 				allNumbers.back() -= 2;
 				allNumbers[0] += 1;
 			}
@@ -51,3 +51,8 @@ int main() {
 	system("pause");
 	return 0;
 }
+
+
+
+
+
