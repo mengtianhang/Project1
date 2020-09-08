@@ -13,7 +13,7 @@ int main() {
 	string res;
 	while (!sSta.empty()) {
 		res += sSta.top;
-		sSta.pop();
+		sSta.pop(); 
 	}
 	cout << res << endl;
 
