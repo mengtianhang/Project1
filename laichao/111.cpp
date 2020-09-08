@@ -1,21 +1,13 @@
 #include <iostream>
 #include <vector>
-#include <stack>
 #include <string>
 using namespace std;
-
 int main() {
-	stack<char>sSta;
-	char tmp;
-	while (tmp = getchar()) {
-		sSta.push(tmp);
+	string s;
+	while (getline(cin, s)) {
+		reverse(s.begin(), s.end());
+		cout << s << endl;
 	}
-	string res;
-	while (!sSta.empty()) {
-		res += sSta.top;
-		sSta.pop(); 
-	}
-	cout << res << endl;
 
 	//system("pause");
 	return 0;
