@@ -1,14 +1,12 @@
 #include <iostream>
+#include <vector>
 #include <string>
-#include <stack>
-#include <algorithm>
 using namespace std;
-
 int main() {
-	string str;
-	while (cin >> str) {
-		reverse(str.begin(), str.end());
-		cout << str << endl;
-	}
+	int a, int b;
+	cin >> a >> b;
+
+
+	system("pause");
 	return 0;
 }
